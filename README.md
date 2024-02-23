@@ -18,8 +18,11 @@
   * Comandos Lightning en HTML.
   * Llamadas entre componentes Padre e Hijos.
   * Menú Vertical.
+  * Efectos e imagenes svg.
 - CSS
 - Javascript.
+  * Animaciones.
+  * Efectos
 - LWC.
 - Comandos Lightning en HTML.
 - Rescursos estáticos - Imágenes y Tipos de Letras.
