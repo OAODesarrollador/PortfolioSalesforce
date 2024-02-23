@@ -2,8 +2,6 @@
 
 .hero {
     margin-top: -0.7%;
-    
-    /*background-image: radial-gradient(50% 176%, #253854 80%, #061922 100%);*/
     min-height: 100vh;
     position: relative;
     overflow: hidden;

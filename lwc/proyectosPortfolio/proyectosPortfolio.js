@@ -1,7 +1,7 @@
-import { LightningElement, api, track } from 'lwc';
+import { LightningElement, track } from 'lwc';
 
 export default class ProyectosPortfolio extends LightningElement {
-   //@api 
+    
    @track selectedItem = 'proyectouno';
    @track currentContent = 'proyectouno';
    @track proyectouno="Proyecto Uno";
