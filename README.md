@@ -24,9 +24,8 @@
   * Animaciones.
   * Efectos
 - LWC.
-- Comandos Lightning en HTML.
 - Rescursos estáticos - Imágenes y Tipos de Letras.
-- 
+  
 ___
 
 
