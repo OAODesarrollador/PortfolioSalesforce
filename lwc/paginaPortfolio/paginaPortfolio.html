@@ -1,0 +1,50 @@
+<template>
+    <lightning-layout 
+      
+      pull-to-boundary="small"
+      
+    >
+      <lightning-layout-item class="contenedortexto" size="12">
+        <h1>Proyecto Portfolio Personal con Experience Cloud</h1><br/>
+        <h2>Aquí intenté plasmar parte del conocimiento sobre desarrollo en Salesforce, y aprovechar esta herramienta
+            disponible en la plataforma. Hé desarrollado componentes en Visualforce y Lightning Web Component, esto 
+        permitió hacer una web algo diferente al standar de Salesforce, por cada una de las páginas del sitio utilicé 
+        métodos de programación diferente, como por ejemplo en una solo visualforce, en otra solo html codificado desde 
+        Experience Cloud, hice uso de la utilidad de Recursos estáticos tanto para imágenes y como para tipos de letras,
+         también agregé efectos en Javascript, y para lograr esto tuve que recurrir a métodos como CallBack
+        entre otras metodologías que tuve que investigar profundamente, accediendo a las páginas de consulta de la plataforma y 
+        foros de desarrolladores de este CRM.   </h2>
+      </lightning-layout-item>
+    </lightning-layout>
+    <div class="slds-align_absolute-center carrusel" >
+        <lightning-carousel >
+            <lightning-carousel-image
+                src={paginaeducacion}
+                header="Página Educación"
+                description="Visualforce: PanelGrid, PanelBar - Componente: Fichas - Recursos estáticos"
+                alternative-text="Visualforce: PanelGrid, PanelBar - Componente: Fichas - Recursos estáticos"
+            
+            ></lightning-carousel-image>
+            <lightning-carousel-image
+                src={paginasobremi}
+                header="Página Sobre Mi"
+                description="Visualforce: PanelBar, Recursos estáticos"
+                alternative-text="Visualforce: PanelBar, Recursos estáticos"
+            ></lightning-carousel-image>
+            <lightning-carousel-image
+                src={paginaproyecto}
+                header="Página Proyectos"
+                description="LWC: Componentes custom, L-Layout, L-Menú Vertical, L-Carousel, lwc:"
+                alternative-text="LWC: Componentes custom, L-Layout, L-Menú Vertical, L-Carousel, lwc:"
+                
+            ></lightning-carousel-image>
+            <lightning-carousel-image
+                src={paginacontacto}
+                header="Página Contacto"
+                description="Visualforce: Recursos estáticos - Html"
+                alternative-text="Visualforce: Recursos estáticos - Html - Flow"
+                
+            ></lightning-carousel-image>
+        </lightning-carousel>
+    </div>
+</template>

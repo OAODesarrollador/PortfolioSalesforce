@@ -1,0 +1,37 @@
+html{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.detalle {
+    color: aliceblue;
+    height: 100vh;
+    position: relative;
+    
+}
+.menu {
+    
+    height: 85 vh;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    
+}
+.item {
+    
+    color: rgb(13, 18, 34);
+    font-size: 1.5em;
+    padding: 3% 0 3% 0;
+    
+}
+.descripcion {
+    
+    margin-left: 25vw;
+}
+.item:hover {
+    color: rgb(236, 237, 238) !important;
+    background-color: rgb(83, 83, 228);
+}
+.item:focus {
+    color: rgb(177, 190, 202) !important;
+}

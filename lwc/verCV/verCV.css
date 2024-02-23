@@ -1,0 +1,9 @@
+html {
+    margin-top: -1%;
+    background-color: rgb(21, 36, 54);
+}
+.vercv {
+    width: 100vw;
+    padding: 1% 2% 0 0;
+    background-image: linear-gradient(  #061922, #253854  ) ;
+}

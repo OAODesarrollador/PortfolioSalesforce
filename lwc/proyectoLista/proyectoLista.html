@@ -1,0 +1,31 @@
+<template>
+    <lightning-layout>
+        <lightning-layout-item size="12">
+            <div class="contenedorTexto">
+                <h1>Lista de Tareas</h1><br/>
+                <p>La misma esta realizada con componetes Ligthning, con la siguiente estructura: 
+                    una tarjeta con 3 componentes, un padre y 2 hijos. Primero se ingresa la descripción y la fecha correspondiente,
+                    y al guardar la tarea, se muestra un mensaje.
+                En la parte inferior se mosatrará en forma automática la tarea ingresada, una vez completada se hace click en 
+                la tilde para reagistrar como finalizada la tarea, nuevamente se mostrará un mensaje y se actualizan ambas columnas.</p><br/>
+                <iframe width="800" height="400" 
+                    src="https://www.youtube.com/embed/1YWcVUgS-xY"              
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen
+                    style="margin-top: 2%; margin-left:10%; ">
+                </iframe><br/><br/>
+                <h2>Conceptos y herramientas Utilizadas:</h2><br/>
+                <ul>
+                    <li><b>Objeto custom:</b> se creo un obejto para registrar las tareas.</li>
+                    <li><b>Aplicación:</b> se creó una aplicación lightning, con 2 pestañas principales.</li>
+                    <li><b>Componentes customizados:</b> se desarrolló un componente padre desde el cual se llama a los hijos.</li>
+                    <li><b>Controladores Apex:</b> Se utilizó para hacer el CRUD sobre el objeto custom "Tareas".</li>
+                    <li><b>Herramientas y comandos destacados: </b>HTML, comandos lightning, CSS, Javascript, refreshApex, SOQL, @wire.</li>
+                </ul>
+            </div>
+        
+           
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

@@ -1,0 +1,74 @@
+<apex:page showHeader="false" sidebar="false" >
+   
+    
+    <style>
+        
+    	.activeTab {background-color: #C4D1D0; color:#292A2A; background-image: none; }
+    	.inactiveTab { background-color: #292A2A; color:#C4D1D0; background-image: none}
+    	.habilidades { background-color: #ECFDFC; font-size: 2em;   }
+    	.habilidadesDos { background-color: #ECFDFC; font-size:20px;}
+		.encabezado{
+        	font-size:18px; 
+        	height:5vh;
+        	background-color: #8FC8CE;
+        	background-image: none;
+        	padding-top:1%;
+        }
+        .activo {
+        	font-size:20px; 
+        	height:5vh;
+        	background-color: #0DB7C8;
+        	background-image: none;
+        	padding-top:1%;
+        	text-align: center;	
+        }
+    </style>
+    
+    <apex:panelGrid columns="2" style="padding:2%; background-color:rgb(21, 36, 54); height: 50vh" >
+        <apex:image style="width:20vw" url="{!URLFOR($Resource.PortfolioImagenes,'AstroUnoConFondo.png')}" />
+        <!--h1 style="font-size:5em">
+            Hola !
+        </h1-->
+        <p style="font-size:2em; text-align: justify; padding-right:5%; color: white">
+              Como desarrollador de software, soy apasionado y comprometido con el aprendizaje continuo. 
+            Me encanta enfrentarme a desafíos constantes porque creo que es la mejor manera de crecer y mejorar. 
+            Cada línea de código es una oportunidad para aprender algo nuevo, y estoy emocionado por el viaje constante de desarrollo y descubrimiento en el fascinante mundo de la programación. 
+            ¡Vamos a construir algo increíble juntos!.-
+                            
+        </p>
+    </apex:panelGrid>
+    
+   
+     <apex:panelBar style="margin: auto; width:90vw; text-align: Left;" headerClass="encabezado" headerClassActive="activo" >
+        <apex:panelBarItem label=" - Habilidades Blandas" contentClass="habilidadesDos"  expanded="False">
+            <apex:panelGrid columns="2" >
+                <p style="text-align:justify; width:80%; margin-left:3%">
+                            Como profesional, me caracterizo por mi fuerte enfoque en el desarrollo 
+                            de habilidades blandas que van más allá de la mera ejecución de tareas técnicas. 
+                            Mi enfoque se centra en la construcción de relaciones sólidas, 
+                            la comunicación efectiva y la resolución creativa de problemas. 
+                            Soy conocido por mi capacidad para trabajar colaborativamente en 
+                            equipos diversos y gestionar eficazmente el cambio. Mi compromiso con la adaptabilidad y la mentalidad abierta me 
+                            permite enfrentar nuevos desafíos con entusiasmo y aprender continuamente en entornos dinámicos.
+                </p>
+                <apex:image width="80%;"  url="{!URLFOR($Resource.PortfolioImagenes,'Meditando.png')}"/>
+            </apex:panelGrid>
+        </apex:panelBarItem>
+        <apex:panelBarItem label=" - Habilidades Duras" contentClass="habilidadesDos" >
+        	<apex:panelGrid columns="2">
+        		<p style="text-align:justify; width:80%; margin-left:3%">
+                    Soy un entusiasta desarrollador de Salesforce con habilidades en CSS,
+                    HTML, JavaScript, Apex, Visualforce, LWC, SOQL y Flow. Además de crear interfaces atractivas,
+                    utilizo Visual Studio Code para un desarrollo ágil y he trabajado con Node.js y React para construir
+                    aplicaciones dinámicas. Mi experiencia se extiende a bases de datos como MongoDB y SQL. 
+                    Con conocimientos en Python, incluyendo bibliotecas como Pandas y Numpy, me destaco en análisis y manipulación de datos.
+                    Estoy emocionado por la oportunidad de aplicar estas habilidades en proyectos desafiantes y contribuir 
+                    al éxito con soluciones innovadoras. ¡Listo para afrontar nuevos desafíos!
+            	</p>
+            <apex:image width="80%;" url="{!URLFOR($Resource.PortfolioImagenes,'HabilidadesConFondo.png')}"/>
+            </apex:panelGrid>
+         </apex:panelBarItem>
+    </apex:panelBar>
+       
+    
+</apex:page>

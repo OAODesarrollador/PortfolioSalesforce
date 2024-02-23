@@ -1,0 +1,163 @@
+<apex:page showHeader="false" sidebar="false">
+    <style>
+    	 .encabezado{
+        	font-size:18px; 
+        	height:4vh;
+        	background-color: #8FC8CE;
+        	background-image: none;
+        	padding-top:1%;
+        	margin: auto;
+        	
+        }
+        .encabezadoactivo{
+        	font-size:20px; 
+        	height:4vh;
+        	background-color: #0DB7C8;
+        	background-image: none;
+        	padding-top:1%;
+        	text-align: center;
+        }
+    </style>
+    <apex:panelBar headerClass="encabezado" headerClassActive="encabezadoactivo" style="margin:auto;  border: none;"  >
+        <apex:panelBarItem label="Desarrollador FullStack">
+    		<apex:panelGrid columns="2" style="padding:0 5% 0 5%">        		
+        		<h1 style="font-size:3em; ">
+            		Desarrollador FullStack
+        		</h1>
+        		<ul style="font-size:2em; width:50vw ">                                    
+            		<p>
+                        Temas Desarrollados:
+                    </p>
+                    	<li>Desarrollo Colaborativo (GitHub, GitLab, Markdown)</li>
+                    	<li>Node.js, CallBack, Async/Await, Servidores HTTP</li>
+                    	<li>Express, Rest</li>
+                    	<li>ORM, ODM, Sql, MongoDB, Mongoose</li>
+                    	<li>React, Redux, API</li>
+        		</ul>
+                <apex:image style="width:30vw;" url="{!URLFOR($Resource.Certificados,'FullStack.png')}" />
+    		</apex:panelGrid>
+        </apex:panelBarItem>
+        <apex:panelBarItem label="Desarrollador Salesforce" >
+    		<apex:panelGrid columns="2" style="padding:0 5% 0 5%; margin-bottom: auto">
+        		<h1 style="font-size:3em;" >
+            		Desarrollador Salesforce
+        		</h1>
+        		<ul style="font-size:2em; width:50vw ">
+                                        
+            		<p>
+                        Temas Desarrollados:
+                    </p>
+                    	<li>Implementación y seguridad de bases de datos.</li>
+                    	<li>Desarrollo de plataformas personalizadas</li>
+                    	<li>Utilización de la consola de desarrollo de Salesforce.</li>
+                    	<li>Comprendiendo los conceptos de Visualforce.</li>
+                    	<li>SOQL; SOSL</li>
+                    	<li>Explorando soluciones de búsqueda en Salesforce.</li>
+                    	<li>Programación orientada a objetos en Apex.</li>
+                    	<li>Aplicación de Salesforce Flow.</li>
+                    	<li>Lightning Web Component.</li>
+                    	<li>Experience Cloud.</li>
+        		</ul>
+        		
+                <apex:image style="width:30vw" url="{!URLFOR($Resource.Certificados,'Salesforce.png')}" />
+    		</apex:panelGrid>
+        </apex:panelBarItem>
+        <apex:panelBarItem label="Desarrollador Web">
+    		<apex:panelGrid columns="2" style="padding:0 5% 0 5%; margin-bottom: auto;">                	  
+        		<h1 style="font-size:3em; ">
+            		Desarrollador Web
+        		</h1>
+        		<ul style="font-size:2em; width:50vw;">
+            		<p>
+                        Temas Desarrollados:
+                    </p>
+                    	<li>HTML, CSS</li>
+                    	<li>Javascript</li>
+                    	<li>React - Componentes</li>
+                    	<li>React - Eventos/Estados</li>
+                    	<li>React - Hooks</li>
+                    	<li>React - Estilos/Imágenes</li>
+                    	<li><a href="https://codepen.io/Oscar-Alejandro-Ortiz/pen/eYxjmJV">Ver Proyecto Final</a></li>
+        		</ul>
+                <apex:image style="width:30vw;display:flex " url="{!URLFOR($Resource.Certificados,'Web-UTN.png')}" />
+    		</apex:panelGrid>
+        </apex:panelBarItem>
+        <apex:panelBarItem label="QA Testing Manual">
+    		<apex:panelGrid columns="2" style="padding:0 5% 0 5%; margin-bottom: auto;">                	  
+        		<h1 style="font-size:3em; ">
+            		QA Testing Manual
+        		</h1>
+        		<ul style="font-size:2em; width:50vw;">
+            		<p>
+                        Temas Desarrollados:
+                    </p>
+                    	<li>Pueba y Depuración</li>
+                    	<li>Casos de Prueba - Crear, Ejecutar</li>
+                    	<li>Prueba y Depuración</li>
+                    	<li>Caja Negra/Blanca</li>
+                    	<li>Error, defecto y Falla</li>
+                    	<li>Reportes</li>
+        		</ul>
+                <apex:image style="width:30vw;display:flex " url="{!URLFOR($Resource.Certificados,'QATesting.png')}" />
+    		</apex:panelGrid>
+        </apex:panelBarItem>
+        <apex:panelBarItem label="Desarrollador Python" >
+    		<apex:panelGrid columns="2" style="padding:0 5% 0 5%; margin-bottom: auto">      		
+        		<h1 style="font-size:3em; ">
+            		Desarrollador Python
+        		</h1>
+        		<ul style="font-size:2em; width:50vw;">
+            		<p>
+                        Temas Desarrollados:
+                    </p>
+                    	<li>Lógica y Estructura</li>
+                    	<li>Variables, operadores, control de flujo</li>
+                    	<li>Funciones</li>
+                    	<li>Excepciones</li>
+                    	<li>Modulos, PIP, Paquetes</li>
+                    	<li>Clases y Objetos</li>
+                    	<li>POO</li>
+        		</ul>
+                <apex:image style="width:30vw" url="{!URLFOR($Resource.Certificados,'Python.png')}" />
+    		</apex:panelGrid>            
+        </apex:panelBarItem>
+        <apex:panelBarItem label="Desarrollador SQL">
+    		<apex:panelGrid columns="2" style="padding:0 5% 0 5%; margin-bottom: auto">             
+                <h1 style="font-size:3em;">
+            		Desarrollador SQL
+        		</h1>
+                
+        		<ul style="font-size:2em; width:50vw;">
+            		<p>
+                        Dictado por la Municipalidad de Córdoba - UTN</p>
+                    <p>
+                        Temas Desarrollados:
+                    </p>
+                    	<li>Vistas</li>
+                    	<li>Transacciones</li>
+                    	<li>Procedimientos Almacenados</li>
+                    	<li>Excepciones</li>
+                    	<li>Funciones</li>
+                    	<li>Triggers</li>
+        		</ul>
+                <apex:image style="width:30vw" url="{!URLFOR($Resource.Certificados,'Logosql.png')}" />
+    		</apex:panelGrid>
+        </apex:panelBarItem>
+        <apex:panelBarItem label="Desarrollador Aplicaciones Móviles">
+    		<apex:panelGrid columns="2" style="padding:0 5% 0 5%; margin-bottom: auto">
+				<h1 style="font-size:3em; ">
+            		Desarrollador de Aplicaciones Móviles
+        		</h1>
+        		<ul style="font-size:2em; width:50vw;">
+            		<p>
+                        Temas Desarrollados:
+                    </p>
+                    	<li>Desarrollo No Code</li>
+                    	<li>Gestión de Imagenes, Sonidos, Videos</li>
+                    	<li>GPS</li>
+           		</ul>
+                <apex:image style="width:20vw" url="{!URLFOR($Resource.Certificados,'appinventor.png')}" />
+    		</apex:panelGrid>
+        </apex:panelBarItem>
+    </apex:panelBar>
+</apex:page>

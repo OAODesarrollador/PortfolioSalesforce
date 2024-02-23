@@ -1,0 +1,13 @@
+<apex:page showHeader="false" sidebar="false" >
+    <apex:panelGrid columns="2" style="padding:0 5% 0 5%; margin-bottom: auto;background-color:rgb(21, 36, 54); height: 100vh">
+                <apex:image style="width:20vw; " url="{!URLFOR($Resource.PortfolioImagenes,'Educado.png')}" />       		
+                <!--h1 style="font-size:5em; padding:0 0 0 8%;color:white">
+                    Hola !
+                </h1-->
+                <p style="font-size:2em; text-align: justify; padding:0 5% 0 8%; color:white">
+                      Como apasionado del desarrollo de software, combino autodidactismo con una 
+                    búsqueda activa de conocimientos a través de cursos, y actualmente haciendo una tecnicatura, 
+                    dedicándome integralmente al crecimiento profesional.-             
+                </p>
+    </apex:panelGrid>
+</apex:page>

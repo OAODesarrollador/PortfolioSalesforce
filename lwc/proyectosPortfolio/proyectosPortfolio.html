@@ -1,0 +1,60 @@
+<template>
+    <div class="">
+    <lightning-layout multiple-rows class="detalle">
+    <lightning-layout-item size="3" class="menu">
+        <lightning-vertical-navigation selected-item={selectedItem} onselect={handleSelect} class="slds-list_vertical-space-medium">
+                <lightning-vertical-navigation-item 
+                    class="slds-nav-vertical__item item" 
+                    label="Aplicaciones Móviles" 
+                    name="proyectouno" >   
+                </lightning-vertical-navigation-item>
+                <lightning-vertical-navigation-item 
+                    class="slds-nav-vertical__item item" 
+                    label="WebScraping - Python" 
+                    name="proyectodos" >   
+                </lightning-vertical-navigation-item>
+                <lightning-vertical-navigation-item 
+                    class="slds-nav-vertical__item item" 
+                    label="Lista Tareas - Salesforce" 
+                    name="proyectotres" >
+                </lightning-vertical-navigation-item>
+                <lightning-vertical-navigation-overflow>
+                    <lightning-vertical-navigation-item label="GitHub" name="githubListaTarea"></lightning-vertical-navigation-item>
+                </lightning-vertical-navigation-overflow>
+                <lightning-vertical-navigation-item 
+                    class="slds-nav-vertical__item item" 
+                    label="Página Portfolio" 
+                    name="proyectocuatro" >                    
+                </lightning-vertical-navigation-item>
+                <lightning-vertical-navigation-overflow>
+                    <lightning-vertical-navigation-item label="Descripción x cada página" name="descripcion"></lightning-vertical-navigation-item>
+                    <lightning-vertical-navigation-item label="GitHub" name="githubPortfolio"></lightning-vertical-navigation-item>
+                </lightning-vertical-navigation-overflow> 
+        </lightning-vertical-navigation>
+    </lightning-layout-item>
+    <lightning-layout-item class="slds-is-absolute descripcion" size="9">
+        <!-- Llamado a Aplicaciones Móviles -->
+        <template lwc:if={verProyectoUno}>    
+            <c-aplicaciones-moviles></c-aplicaciones-moviles>
+        </template>
+        <!-- Llamado a WebScraping -->
+        <template lwc:if={verProyectoDos}>
+            <c-web-scraping></c-web-scraping>
+        </template>
+        <!-- Llamado a Lista de Tareas Salesforce -->
+        <template lwc:if={verProyectoTres}>
+            <c-proyecto-lista></c-proyecto-lista>
+        </template>
+        <!-- Llamado a Portfolio-->
+        <template lwc:if={verProyectoCuatro} >
+            <c-pagina-portfolio></c-pagina-portfolio>      
+        </template>
+        
+        <template lwc:if={verdescripcion}>
+            <c-descripcion-proyecto></c-descripcion-proyecto>
+        </template>
+        
+    </lightning-layout-item>
+    </lightning-layout>
+    </div>
+</template>

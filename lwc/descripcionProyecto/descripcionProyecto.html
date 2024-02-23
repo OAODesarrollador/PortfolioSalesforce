@@ -1,0 +1,49 @@
+<template>
+    <div class="contenedorTexto">
+        <lightning-layout 
+        pull-to-boundary="small"
+        >
+            <lightning-layout-item size="12">
+                <h1>Conceptos y herramientas utilizadas por página</h1><br/><br/>
+            </lightning-layout-item>
+        </lightning-layout>
+        
+        <lightning-layout >
+        
+        
+            <lightning-layout-item size="8">  
+                <ul>
+                    <li><p><b>General : </b>Se registró las páginas de confianza (CPS), se uso CSS para la página en su totalidad, se 
+                    agragó un boton para la visualizacion y descarga del Curriculum Vitae.</p></li><br/><br/>
+                    <li>
+                        <p><b>Inicio : </b>HTML para la estructura y usar los gráficos SVG así dar el efecto del fondo con movimiento,
+                            CSS para personalizar y dar moviemto de salto al nombre, Javascript para complementar el efecto del cursor.
+                            Menú mosaico para enlazar a cada página.</p><br/><br/>
+                    </li>
+                    <li>
+                        <p><b>Sobre Mi : </b>Recursos Estáticos para los gráficos, visualforce para los componentes, usando
+                        comandos apex, como ser PanelBar y PanelGrid. Además CSS para personalizarlo.  </p><br/><br/>
+                    </li>
+                    
+                    <li>
+                        <p><b>Educación : </b>Recursos estáticos para los gráficos, Fichas como complemento estandar, Visualforce para los 
+                        componentes que estan como parte principal y también dentro de la ficha que contiene los datos de la formación,
+                        además Html dentro del Generador.  </p><br/><br/>
+                    </li>
+                    <li>
+                        <p><b>Proyectos : </b>Recursos estáticos para los gráficos, Lightning Web Component para casi toda página con funciones
+                        propias como Carousel, Layout, Vertical Nav. Javascript para darle funcionalidad al menú, y así mostrar solamente 
+                    el contenido de lo seleccinado. La estructura básica es un componente pardre que llama a cada componente custom hijo seleccionado.</p><br/><br/>
+                    </li>
+                    <li>
+                        <p><b>Contacto : </b>Recursos estáticos y Visualforce para el gráfico, HTML escrito directamente en el generador</p><br/><br/>
+                    </li>
+                </ul>
+        </lightning-layout-item>
+        <lightning-layout-item size="4" class="slds-align_absolute-center">
+
+               <img src={codificando} alt="" > 
+        </lightning-layout-item>
+        </lightning-layout>
+    </div>
+</template>

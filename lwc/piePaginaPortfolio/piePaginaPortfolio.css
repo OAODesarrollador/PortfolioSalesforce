@@ -1,0 +1,34 @@
+html {
+    z-index: 1;
+}
+.botones {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    background-color: #2980a0;
+    align-items: center;
+    height: 10vh;
+
+}
+
+.redes {  
+    margin-right: 2%;
+    text-align: right;
+}
+.boton:hover {
+    transform: scale(1.1, 1.1 );
+}
+.datos {
+    color: #ffffff;
+}
+
+.boton {
+    border: none;
+    width: 6vw;
+    background-color: #2980a0;
+    padding: 0% 2% 0% 2%;
+}
+
+.imgdatos {
+    width: 3vw;
+    margin-left: 2%;
+}
